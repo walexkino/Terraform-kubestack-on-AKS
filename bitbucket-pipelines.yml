@@ -1,0 +1,9 @@
+image: hashicorp/terraform:0.12.29
+
+pipelines:
+  default:
+    - step:
+        name: Deploy Kubernetes cluster
+        script:
+          - chmod +x ./deploy.sh
+          - ./deploy.sh
